@@ -34,5 +34,11 @@ import doctest
 def run_tests():
     doctest.testmod(verbose=True, optionflags=doctest.NORMALIZE_WHITESPACE)
 
-
+count = 0
 def letter_count(message, chars):
+
+    for chars in message:
+        count = count + chars
+
+    print(count)
+        
